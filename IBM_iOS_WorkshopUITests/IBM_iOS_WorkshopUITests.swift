@@ -24,7 +24,7 @@ final class IBM_iOS_WorkshopUITests: XCTestCase {
     }
     
     func testViewControllerInitialization() {
-        let searchBarElement = app.otherElements["searchBar"]
-        XCTAssertTrue(searchBarElement.exists)
+        let button = app.buttons["showButton"]
+        XCTAssertTrue(button.exists)
     }
 }
