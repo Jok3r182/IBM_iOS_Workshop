@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA11F4342C16EE0700A35582 /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11F4332C16EE0700A35582 /* LoginViewControllerUITests.swift */; };
+		BA11F4342C16EE0700A35582 /* UITestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11F4332C16EE0700A35582 /* UITestWrapper.swift */; };
+		BAC475E82C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */; };
+		BAC475E92C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAEB5ADE2BC71FAA00A1A77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB5ADD2BC71FAA00A1A77F /* AppDelegate.swift */; };
 		BAEB5AE02BC71FAA00A1A77F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB5ADF2BC71FAA00A1A77F /* SceneDelegate.swift */; };
 		BAEB5AE22BC71FAA00A1A77F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB5AE12BC71FAA00A1A77F /* LoginViewController.swift */; };
@@ -26,9 +28,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BAC475EA2C2053EB002A57F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAC475E92C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BA11F4332C16EE0700A35582 /* LoginViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITests.swift; sourceTree = "<group>"; };
+		BA11F4332C16EE0700A35582 /* UITestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestWrapper.swift; sourceTree = "<group>"; };
 		BA8384422C16E4F900414E2E /* IBM_iOS_WorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBM_iOS_WorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC475E52C2052BD002A57F6 /* IBM_iOS_WorkshopUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IBM_iOS_WorkshopUITests.xctestplan; sourceTree = "<group>"; };
+		BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IBM_Workshop_UI_Test.xcframework; path = ../IBM_iOS_Workshop_Tests/IBM_Workshop_UI_Test/IBM_Workshop_UI_Test.xcframework; sourceTree = "<group>"; };
 		BAEB5ADA2BC71FAA00A1A77F /* IBM_iOS_Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM_iOS_Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB5ADD2BC71FAA00A1A77F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEB5ADF2BC71FAA00A1A77F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC475E82C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,17 +88,27 @@
 		BA8384432C16E4F900414E2E /* IBM_iOS_WorkshopUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BA11F4332C16EE0700A35582 /* LoginViewControllerUITests.swift */,
+				BA11F4332C16EE0700A35582 /* UITestWrapper.swift */,
 			);
 			path = IBM_iOS_WorkshopUITests;
+			sourceTree = "<group>";
+		};
+		BAC475E62C2053EB002A57F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BAEB5AD12BC71FAA00A1A77F = {
 			isa = PBXGroup;
 			children = (
+				BAC475E52C2052BD002A57F6 /* IBM_iOS_WorkshopUITests.xctestplan */,
 				BAEB5ADC2BC71FAA00A1A77F /* IBM_iOS_Workshop */,
 				BA8384432C16E4F900414E2E /* IBM_iOS_WorkshopUITests */,
 				BAEB5ADB2BC71FAA00A1A77F /* Products */,
+				BAC475E62C2053EB002A57F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +144,7 @@
 				BA83843E2C16E4F900414E2E /* Sources */,
 				BA83843F2C16E4F900414E2E /* Frameworks */,
 				BA8384402C16E4F900414E2E /* Resources */,
+				BAC475EA2C2053EB002A57F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA11F4342C16EE0700A35582 /* LoginViewControllerUITests.swift in Sources */,
+				BA11F4342C16EE0700A35582 /* UITestWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

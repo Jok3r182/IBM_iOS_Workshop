@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "D45980D6-E2B6-4E51-8D59-3438270F34D3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+      "identifier" : "BAEB5AD92BC71FAA00A1A77F",
+      "name" : "IBM_iOS_Workshop"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+        "identifier" : "BA8384412C16E4F900414E2E",
+        "name" : "IBM_iOS_WorkshopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
