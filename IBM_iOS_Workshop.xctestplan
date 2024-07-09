@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "658B0228-7B09-4D98-8DD0-9D03791974E9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+      "identifier" : "BAEB5AD92BC71FAA00A1A77F",
+      "name" : "IBM_iOS_Workshop"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+        "identifier" : "BAEB5AEF2BC71FAA00A1A77F",
+        "name" : "IBM_iOS_WorkshopTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+        "identifier" : "BA8384412C16E4F900414E2E",
+        "name" : "IBM_iOS_WorkshopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

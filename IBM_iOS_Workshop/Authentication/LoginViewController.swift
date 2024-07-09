@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import IBM_iOS_Workshop_Utils
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var usernameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onLogin(_ sender: Any) {
+        UserManager.createUser(username: usernameTextField.text ?? "")
+    }
+    
 }
 

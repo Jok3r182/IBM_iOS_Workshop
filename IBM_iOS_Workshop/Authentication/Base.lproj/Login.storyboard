@@ -66,6 +66,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log in"/>
+                                                <connections>
+                                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W2Y-5f-leC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="ZSC-L4-wxg"/>
@@ -82,6 +85,9 @@
                             <constraint firstItem="mYx-fo-RV9" firstAttribute="bottom" secondItem="Hms-gH-6ic" secondAttribute="bottom" constant="15" id="Z4e-1P-sB5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="7wo-rE-MpS" id="fPh-79-B5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
