@@ -52,6 +52,7 @@
 		96AA8CFF80D5E4286C44BB6E /* Pods-IBM_iOS_Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM_iOS_Workshop.debug.xcconfig"; path = "Target Support Files/Pods-IBM_iOS_Workshop/Pods-IBM_iOS_Workshop.debug.xcconfig"; sourceTree = "<group>"; };
 		BA11F4332C16EE0700A35582 /* UITestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestWrapper.swift; sourceTree = "<group>"; };
 		BA8384422C16E4F900414E2E /* IBM_iOS_WorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBM_iOS_WorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABCDD832C4414E300E5CD14 /* IBM_iOS_Workshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBM_iOS_Workshop.entitlements; sourceTree = "<group>"; };
 		BAC475E52C2052BD002A57F6 /* IBM_iOS_WorkshopUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IBM_iOS_WorkshopUITests.xctestplan; sourceTree = "<group>"; };
 		BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IBM_Workshop_UI_Test.xcframework; path = ../IBM_iOS_Workshop_Tests/IBM_Workshop_UI_Test/IBM_Workshop_UI_Test.xcframework; sourceTree = "<group>"; };
 		BAEB5ADA2BC71FAA00A1A77F /* IBM_iOS_Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM_iOS_Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +151,7 @@
 		BAEB5ADC2BC71FAA00A1A77F /* IBM_iOS_Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				BABCDD832C4414E300E5CD14 /* IBM_iOS_Workshop.entitlements */,
 				BA8384372C16DD5900414E2E /* Authentication */,
 				BAEB5ADD2BC71FAA00A1A77F /* AppDelegate.swift */,
 				BAEB5ADF2BC71FAA00A1A77F /* SceneDelegate.swift */,
@@ -397,12 +399,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 864CLX8TQT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthew.IBM-iOS-WorkshopUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IBM-iOS-WorkshopUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -417,12 +419,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 864CLX8TQT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthew.IBM-iOS-WorkshopUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IBM-iOS-WorkshopUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -558,8 +560,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IBM_iOS_Workshop/IBM_iOS_Workshop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBM_iOS_Workshop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -586,8 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IBM_iOS_Workshop/IBM_iOS_Workshop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBM_iOS_Workshop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

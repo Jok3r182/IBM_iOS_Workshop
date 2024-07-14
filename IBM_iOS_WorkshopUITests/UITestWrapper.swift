@@ -8,8 +8,10 @@
 import XCTest
 import IBM_Workshop_UI_Test
 
+//fix shared keychain bug
 final class UITestWrapper: XCTestCase {
     func testRunTests(){
         UITestRunner.runAllTests()
     }
 }
+

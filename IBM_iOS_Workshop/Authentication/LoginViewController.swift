@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func onLogin(_ sender: Any) {
         UserManager.createUser(username: usernameTextField.text ?? "")
+        usernameTextField.text = ""
     }
     
 }
