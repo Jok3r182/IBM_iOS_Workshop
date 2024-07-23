@@ -175,6 +175,7 @@
 				BA8384402C16E4F900414E2E /* Resources */,
 				BAC475EA2C2053EB002A57F6 /* Embed Frameworks */,
 				AA0C522B5CE4A397944C79B6 /* [CP] Embed Pods Frameworks */,
+				BA34098C2C4FE4D100D3A50F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +196,7 @@
 				BAEB5AD72BC71FAA00A1A77F /* Frameworks */,
 				BAEB5AD82BC71FAA00A1A77F /* Resources */,
 				60013FF1181B55ED335835D3 /* [CP] Embed Pods Frameworks */,
+				BA34098B2C4FDD9A00D3A50F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -319,6 +321,40 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBM_iOS_Workshop-IBM_iOS_WorkshopUITests/Pods-IBM_iOS_Workshop-IBM_iOS_WorkshopUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BA34098B2C4FDD9A00D3A50F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\n# Define the base path for the .xcframework\nBASE_PATH=\"Frameworks/IBM_iOS_Workshop_Utils.framework\"\n\n# Construct the path to the script\nSCRIPT_RELATIVE_PATH=\"${BASE_PATH}/generate_id.sh\"\nSCRIPT_ABSOLUTE_PATH=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/${SCRIPT_RELATIVE_PATH}\"\n\n# Debug: Print the SCRIPT_ABSOLUTE_PATH\necho \"SCRIPT_ABSOLUTE_PATH: $SCRIPT_ABSOLUTE_PATH\"\n\n# Verify if the script file exists\nif [ ! -f \"$SCRIPT_ABSOLUTE_PATH\" ]; then\n    echo \"Script file does not exist at: $SCRIPT_ABSOLUTE_PATH\"\n    exit 1\nfi\n\n# Ensure the script is executable\nchmod +x \"$SCRIPT_ABSOLUTE_PATH\"\n\n# Print message before running the script\necho \"Running the script...\"\n\n# Run the script and capture output\n\"$SCRIPT_ABSOLUTE_PATH\" 2>&1 | tee /tmp/script_output.log\n\n# Print completion message\necho \"Script executed.\"\n";
+		};
+		BA34098C2C4FE4D100D3A50F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\n# Define the base path for the .xcframework\nBASE_PATH=\"Frameworks/IBM_iOS_Workshop_Utils.framework\"\n\n# Construct the path to the script\nSCRIPT_RELATIVE_PATH=\"${BASE_PATH}/generate_id.sh\"\nSCRIPT_ABSOLUTE_PATH=\"${CONFIGURATION_BUILD_DIR}/IBM_iOS_Workshop.app/${SCRIPT_RELATIVE_PATH}\"\n\n# Debug: Print the SCRIPT_ABSOLUTE_PATH\necho \"SCRIPT_ABSOLUTE_PATH: $SCRIPT_ABSOLUTE_PATH\"\n\n# Verify if the script file exists\nif [ ! -f \"$SCRIPT_ABSOLUTE_PATH\" ]; then\n    echo \"Script file does not exist at: $SCRIPT_ABSOLUTE_PATH\"\n    exit 1\nfi\n\n# Ensure the script is executable\nchmod +x \"$SCRIPT_ABSOLUTE_PATH\"\n\n# Print message before running the script\necho \"Running the script...\"\n\n# Run the script and capture output\n\"$SCRIPT_ABSOLUTE_PATH\" 2>&1 | tee /tmp/script_output.log\n\n# Print completion message\necho \"Script executed.\"\n";
 		};
 		F4B8BDA01F62EA534FE18BE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

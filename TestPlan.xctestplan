@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "2D7CB23F-0E01-435E-903D-20AF21C84CF8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "LoginViewControllerUITests",
+        "_LoginViewControllerUITests"
+      ],
+      "target" : {
+        "containerPath" : "container:IBM_iOS_Workshop.xcodeproj",
+        "identifier" : "BA8384412C16E4F900414E2E",
+        "name" : "IBM_iOS_WorkshopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

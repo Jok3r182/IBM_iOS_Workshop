@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestPlan.xctestplan">
+   </FileRef>
+   <FileRef
       location = "group:IBM_iOS_Workshop.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:IBM_iOS_Workshop.xctestplan">
+      location = "group:../IBM_iOS_WorkshopUITests.xctestplan">
    </FileRef>
 </Workspace>
