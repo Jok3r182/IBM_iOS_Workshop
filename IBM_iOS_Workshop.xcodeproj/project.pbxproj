@@ -10,6 +10,9 @@
 		57F097D1EB9515E60F2A90A8 /* Pods_IBM_iOS_Workshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E7138C0809DF530FAAC99D /* Pods_IBM_iOS_Workshop.framework */; };
 		81517ECC01AB576D63F43B6C /* Pods_IBM_iOS_Workshop_IBM_iOS_WorkshopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C776A69771998E9BC343838 /* Pods_IBM_iOS_Workshop_IBM_iOS_WorkshopUITests.framework */; };
 		BA11F4342C16EE0700A35582 /* UITestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11F4332C16EE0700A35582 /* UITestWrapper.swift */; };
+		BA3409AA2C58EB6E00D3A50F /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3409A92C58EB6E00D3A50F /* UserProfile.storyboard */; };
+		BA3409AC2C58EC9800D3A50F /* UserProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3409AB2C58EC9800D3A50F /* UserProfilePictureViewController.swift */; };
+		BA3409AF2C58F93400D3A50F /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3409AE2C58F93400D3A50F /* StoryboardIdentifiers.swift */; };
 		BAC475E82C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC475E72C2053EB002A57F6 /* IBM_Workshop_UI_Test.xcframework */; };
 		BAEB5ADE2BC71FAA00A1A77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB5ADD2BC71FAA00A1A77F /* AppDelegate.swift */; };
 		BAEB5AE02BC71FAA00A1A77F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB5ADF2BC71FAA00A1A77F /* SceneDelegate.swift */; };
@@ -51,6 +54,9 @@
 		92A077302A845C6C2A3CFB38 /* Pods-IBM_iOS_WorkshopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM_iOS_WorkshopUITests.release.xcconfig"; path = "Target Support Files/Pods-IBM_iOS_WorkshopUITests/Pods-IBM_iOS_WorkshopUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96AA8CFF80D5E4286C44BB6E /* Pods-IBM_iOS_Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM_iOS_Workshop.debug.xcconfig"; path = "Target Support Files/Pods-IBM_iOS_Workshop/Pods-IBM_iOS_Workshop.debug.xcconfig"; sourceTree = "<group>"; };
 		BA11F4332C16EE0700A35582 /* UITestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestWrapper.swift; sourceTree = "<group>"; };
+		BA3409A92C58EB6E00D3A50F /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		BA3409AB2C58EC9800D3A50F /* UserProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePictureViewController.swift; sourceTree = "<group>"; };
+		BA3409AE2C58F93400D3A50F /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		BA8384422C16E4F900414E2E /* IBM_iOS_WorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBM_iOS_WorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABCDD832C4414E300E5CD14 /* IBM_iOS_Workshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBM_iOS_Workshop.entitlements; sourceTree = "<group>"; };
 		BAC475E52C2052BD002A57F6 /* IBM_iOS_WorkshopUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IBM_iOS_WorkshopUITests.xctestplan; sourceTree = "<group>"; };
@@ -98,6 +104,23 @@
 				BF7B8673112CBC31B886FED0 /* Pods-IBM_iOS_Workshop-IBM_iOS_WorkshopUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA3409A82C58EAFF00D3A50F /* ProfilePicture */ = {
+			isa = PBXGroup;
+			children = (
+				BA3409A92C58EB6E00D3A50F /* UserProfile.storyboard */,
+				BA3409AB2C58EC9800D3A50F /* UserProfilePictureViewController.swift */,
+			);
+			path = ProfilePicture;
+			sourceTree = "<group>";
+		};
+		BA3409AD2C58F92700D3A50F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA3409AE2C58F93400D3A50F /* StoryboardIdentifiers.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		BA8384372C16DD5900414E2E /* Authentication */ = {
@@ -151,6 +174,8 @@
 		BAEB5ADC2BC71FAA00A1A77F /* IBM_iOS_Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				BA3409AD2C58F92700D3A50F /* Utils */,
+				BA3409A82C58EAFF00D3A50F /* ProfilePicture */,
 				BABCDD832C4414E300E5CD14 /* IBM_iOS_Workshop.entitlements */,
 				BA8384372C16DD5900414E2E /* Authentication */,
 				BAEB5ADD2BC71FAA00A1A77F /* AppDelegate.swift */,
@@ -258,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEB5AE72BC71FAA00A1A77F /* Assets.xcassets in Resources */,
+				BA3409AA2C58EB6E00D3A50F /* UserProfile.storyboard in Resources */,
 				BAEB5AEA2BC71FAA00A1A77F /* Base in Resources */,
 				BAEB5AE52BC71FAA00A1A77F /* Base in Resources */,
 			);
@@ -394,7 +420,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEB5AE22BC71FAA00A1A77F /* LoginViewController.swift in Sources */,
+				BA3409AC2C58EC9800D3A50F /* UserProfilePictureViewController.swift in Sources */,
 				BAEB5ADE2BC71FAA00A1A77F /* AppDelegate.swift in Sources */,
+				BA3409AF2C58F93400D3A50F /* StoryboardIdentifiers.swift in Sources */,
 				BAEB5AE02BC71FAA00A1A77F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

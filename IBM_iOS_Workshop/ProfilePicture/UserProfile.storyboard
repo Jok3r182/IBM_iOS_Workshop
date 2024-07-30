@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Profile Picture View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UserProfilePictureViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="UserProfilePictureViewController" customModule="IBM_iOS_Workshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-RR-FUC">
+                                <rect key="frame" x="15" y="74" width="363" height="680"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vpi-wx-xW1">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="340"/>
+                                    </imageView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-9g-kv9">
+                                        <rect key="frame" x="0.0" y="340" width="363" height="340"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgL-mc-Iar">
+                                <rect key="frame" x="15" y="769" width="363" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="n9u-08-bNB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zUt-R9-MQs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SgL-mc-Iar" secondAttribute="trailing" constant="15" id="Hkl-Qj-MdF"/>
+                            <constraint firstItem="SgL-mc-Iar" firstAttribute="top" secondItem="kLA-RR-FUC" secondAttribute="bottom" constant="15" id="OZt-0W-fB1"/>
+                            <constraint firstItem="kLA-RR-FUC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="Yjr-ua-zTT"/>
+                            <constraint firstItem="SgL-mc-Iar" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="kCH-B6-Pod"/>
+                            <constraint firstItem="SgL-mc-Iar" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-15" id="kWg-b4-z77"/>
+                            <constraint firstAttribute="trailing" secondItem="kLA-RR-FUC" secondAttribute="trailing" constant="15" id="s0G-LG-azo"/>
+                            <constraint firstItem="kLA-RR-FUC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="ubs-6X-eYg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wLW-m3-E1l"/>
+                    <connections>
+                        <outlet property="imageView" destination="Vpi-wx-xW1" id="sdY-1B-vMe"/>
+                        <outlet property="pickerView" destination="Ag0-9g-kv9" id="kQU-o9-qo6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.27480916030527" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
