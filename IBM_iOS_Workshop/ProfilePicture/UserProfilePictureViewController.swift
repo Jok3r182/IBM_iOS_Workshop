@@ -7,12 +7,14 @@
 
 import Foundation
 import UIKit
+import IBM_iOS_Workshop_Utils
 
 class UserProfilePictureViewController: UIViewController{
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pickerView: UIPickerView!
     
-    var pickerData: [String: URL] = [:]
+    var url: String = ""
+    var pickerData: [String: String] = [:]
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -23,7 +25,7 @@ class UserProfilePictureViewController: UIViewController{
     
     // MARK: - Private methods
     @IBAction func onSubmit(_ sender: Any) {
-        //set picture on submit
+        UserManager.add(imageUrl: url)
     }
     
     // MARK: - Actions
@@ -36,8 +38,8 @@ class UserProfilePictureViewController: UIViewController{
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         pickerData = [
-            "Halo": URL(string: "https://wpassets.halowaypoint.com/wp-content/2021/10/Autumnarchives_thumbnail-2.jpg")!,
-            "Batman": URL(string: "https://static.dc.com/dc/files/default_images/Char_Profile_Batman_20190116_5c3fc4b40faec2.47318964.jpg")!
+            "Halo":  "https://wpassets.halowaypoint.com/wp-content/2021/10/Autumnarchives_thumbnail-2.jpg",
+            "Batman": "https://static.dc.com/dc/files/default_images/Char_Profile_Batman_20190116_5c3fc4b40faec2.47318964.jpg"
         ]
     }
     
@@ -76,8 +78,9 @@ extension UserProfilePictureViewController: UIPickerViewDataSource, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let selectedKey = Array(pickerData.keys)[row]
-        if let selectedURL = pickerData[selectedKey] {
+        if let selectedValue = pickerData[selectedKey], let selectedURL = URL(string: selectedValue) {
             loadImage(from: selectedURL)
+            url = selectedValue
         }
     }
 }
