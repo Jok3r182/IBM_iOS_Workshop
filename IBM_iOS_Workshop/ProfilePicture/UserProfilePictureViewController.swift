@@ -11,16 +11,13 @@ import IBM_iOS_Workshop_Utils
 
 class UserProfilePictureViewController: UIViewController{
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var pickerView: UIPickerView!
     
     var url: String = ""
-    var pickerData: [String: String] = [:]
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
-        setupPicker()
     }
     
     // MARK: - Private methods
@@ -34,15 +31,6 @@ class UserProfilePictureViewController: UIViewController{
     }
     
     // MARK: - Private methods
-    private func setupPicker(){
-        self.pickerView.delegate = self
-        self.pickerView.dataSource = self
-        pickerData = [
-            "Halo":  "https://wpassets.halowaypoint.com/wp-content/2021/10/Autumnarchives_thumbnail-2.jpg",
-            "Batman": "https://static.dc.com/dc/files/default_images/Char_Profile_Batman_20190116_5c3fc4b40faec2.47318964.jpg"
-        ]
-    }
-    
     private func setupNavigation(){
         self.title = "Profile Picture View"
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backButtonTapped))
@@ -60,27 +48,19 @@ class UserProfilePictureViewController: UIViewController{
         }
         task.resume()
     }
+    
+    private func isValidURL(_ urlString: String) -> Bool {
+        let urlRegex = "^(https?://)?([\\w.-]+)?([\\w\\.-]+\\.[a-zA-Z]{2,6})(:[0-9]{1,5})?(/.*)?$"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", urlRegex)
+        return predicate.evaluate(with: urlString)
+    }
 }
 
-// MARK: - UIPickerViewDelegate
-extension UserProfilePictureViewController: UIPickerViewDataSource, UIPickerViewDelegate{
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return Array(pickerData.keys)[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let selectedKey = Array(pickerData.keys)[row]
-        if let selectedValue = pickerData[selectedKey], let selectedURL = URL(string: selectedValue) {
-            loadImage(from: selectedURL)
-            url = selectedValue
+// MARK: - UISearchBarDelegate
+extension UserProfilePictureViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if isValidURL(searchText){
+            loadImage(from: URL(string: searchText)!)
         }
     }
 }
