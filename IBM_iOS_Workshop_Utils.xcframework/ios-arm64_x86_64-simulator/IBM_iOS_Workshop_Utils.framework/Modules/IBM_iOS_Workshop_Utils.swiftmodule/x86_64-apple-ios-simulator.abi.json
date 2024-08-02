@@ -1,0 +1,192 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserManager",
+        "printedName": "UserManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createUser",
+            "printedName": "createUser(username:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC06createE08usernameySS_tFZ",
+            "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC06createE08usernameySS_tFZ",
+            "moduleName": "IBM_iOS_Workshop_Utils",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(imageUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC3add8imageUrlySS_tFZ",
+            "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC3add8imageUrlySS_tFZ",
+            "moduleName": "IBM_iOS_Workshop_Utils",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC",
+        "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC",
+        "moduleName": "IBM_iOS_Workshop_Utils",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCore",
+        "printedName": "FirebaseCore",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils"
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseDatabase",
+        "printedName": "FirebaseDatabase",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IBM_iOS_Workshop_Utils",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "XOREncryptionHandler",
+        "printedName": "XOREncryptionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "decryptID",
+            "printedName": "decryptID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC9decryptIDSSSgyF",
+            "mangledName": "$s22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC9decryptIDSSSgyF",
+            "moduleName": "IBM_iOS_Workshop_Utils",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC",
+        "mangledName": "$s22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC",
+        "moduleName": "IBM_iOS_Workshop_Utils",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mataspauliusdregva\/IBM_iOS_Workshop_Utils\/IBM_iOS_Workshop_Utils\/FirebaseHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 755,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mataspauliusdregva\/IBM_iOS_Workshop_Utils\/IBM_iOS_Workshop_Utils\/XOREncryptionHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 14,
+      "value": "\"iOS_Workshop\""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module IBM_iOS_Workshop_Utils {
+  umbrella header "IBM_iOS_Workshop_Utils.h"
+  export *
+
+  module * { export * }
+}
