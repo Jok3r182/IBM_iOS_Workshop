@@ -125,50 +125,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "XOREncryptionHandler",
-        "printedName": "XOREncryptionHandler",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decryptID",
-            "printedName": "decryptID()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC9decryptIDSSSgyF",
-            "mangledName": "$s22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC9decryptIDSSSgyF",
-            "moduleName": "IBM_iOS_Workshop_Utils",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC",
-        "mangledName": "$s22IBM_iOS_Workshop_Utils20XOREncryptionHandlerC",
-        "moduleName": "IBM_iOS_Workshop_Utils",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
       }
     ],
     "json_format_version": 8
@@ -184,7 +140,7 @@
     {
       "filePath": "\/Users\/mataspauliusdregva\/IBM_iOS_Workshop_Utils\/IBM_iOS_Workshop_Utils\/XOREncryptionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 198,
+      "offset": 200,
       "length": 14,
       "value": "\"iOS_Workshop\""
     }

@@ -15,7 +15,3 @@ import _SwiftConcurrencyShims
   public static func add(imageUrl: Swift.String)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class XOREncryptionHandler {
-  public func decryptID() -> Swift.String?
-  @objc deinit
-}

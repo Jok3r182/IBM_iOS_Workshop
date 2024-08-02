@@ -11,17 +11,7 @@ import XCTest
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class UserManager {
-  public static func createUser(username: Swift.String)
-  public static func add(score: Swift.Int, completion: @escaping () -> Swift.Void)
-  public static func add(imageUrl: Swift.String)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class UITestRunner {
   public static func runAllTests()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class XOREncryptionHandler {
-  public func decryptID() -> Swift.String?
   @objc deinit
 }

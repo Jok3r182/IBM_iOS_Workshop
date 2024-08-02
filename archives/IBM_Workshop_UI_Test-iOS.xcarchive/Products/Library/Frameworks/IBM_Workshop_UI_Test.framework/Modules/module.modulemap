@@ -1,6 +1,0 @@
-framework module IBM_Workshop_UI_Test {
-  umbrella header "IBM_Workshop_UI_Test.h"
-  export *
-
-  module * { export * }
-}

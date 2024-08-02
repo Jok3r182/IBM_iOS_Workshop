@@ -22,122 +22,6 @@
         "moduleName": "IBM_Workshop_UI_Test"
       },
       {
-        "kind": "TypeDecl",
-        "name": "UserManager",
-        "printedName": "UserManager",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "createUser",
-            "printedName": "createUser(username:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20IBM_Workshop_UI_Test11UserManagerC06createE08usernameySS_tFZ",
-            "mangledName": "$s20IBM_Workshop_UI_Test11UserManagerC06createE08usernameySS_tFZ",
-            "moduleName": "IBM_Workshop_UI_Test",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "add",
-            "printedName": "add(score:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20IBM_Workshop_UI_Test11UserManagerC3add5score10completionySi_yyctFZ",
-            "mangledName": "$s20IBM_Workshop_UI_Test11UserManagerC3add5score10completionySi_yyctFZ",
-            "moduleName": "IBM_Workshop_UI_Test",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "add",
-            "printedName": "add(imageUrl:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20IBM_Workshop_UI_Test11UserManagerC3add8imageUrlySS_tFZ",
-            "mangledName": "$s20IBM_Workshop_UI_Test11UserManagerC3add8imageUrlySS_tFZ",
-            "moduleName": "IBM_Workshop_UI_Test",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:20IBM_Workshop_UI_Test11UserManagerC",
-        "mangledName": "$s20IBM_Workshop_UI_Test11UserManagerC",
-        "moduleName": "IBM_Workshop_UI_Test",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
         "kind": "Import",
         "name": "XCTest",
         "printedName": "XCTest",
@@ -235,50 +119,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "XOREncryptionHandler",
-        "printedName": "XOREncryptionHandler",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decryptID",
-            "printedName": "decryptID()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20IBM_Workshop_UI_Test20XOREncryptionHandlerC9decryptIDSSSgyF",
-            "mangledName": "$s20IBM_Workshop_UI_Test20XOREncryptionHandlerC9decryptIDSSSgyF",
-            "moduleName": "IBM_Workshop_UI_Test",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:20IBM_Workshop_UI_Test20XOREncryptionHandlerC",
-        "mangledName": "$s20IBM_Workshop_UI_Test20XOREncryptionHandlerC",
-        "moduleName": "IBM_Workshop_UI_Test",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
       }
     ],
     "json_format_version": 8
@@ -308,7 +148,7 @@
     {
       "filePath": "\/Users\/mataspauliusdregva\/IBM_iOS_Workshop_Tests\/IBM_Workshop_UI_Test\/IBM_Workshop_UI_Test\/Utils\/XOREncryptionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 198,
+      "offset": 200,
       "length": 14,
       "value": "\"iOS_Workshop\""
     }
