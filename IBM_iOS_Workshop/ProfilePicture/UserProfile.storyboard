@@ -18,33 +18,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-RR-FUC">
-                                <rect key="frame" x="15" y="73.999999999999986" width="363" height="193.66666666666663"/>
+                                <rect key="frame" x="15" y="74" width="363" height="200"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Image URL" translatesAutoresizingMaskIntoConstraints="NO" id="oGd-CA-GoH">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="HHR-ih-Fem"/>
-                                        </constraints>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="C6x-Hq-7XJ"/>
-                                        </connections>
-                                    </searchBar>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpi-wx-xW1">
-                                        <rect key="frame" x="0.0" y="55" width="363" height="138.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="600" id="8Pu-UG-n0o"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgL-mc-Iar">
-                                <rect key="frame" x="15" y="282.66666666666669" width="363" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgL-mc-Iar" userLabel="Import photo">
+                                <rect key="frame" x="15" y="289" width="363" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="n9u-08-bNB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Import photo"/>
                                 <connections>
                                     <action selector="onSubmit:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zUt-R9-MQs"/>
                                 </connections>

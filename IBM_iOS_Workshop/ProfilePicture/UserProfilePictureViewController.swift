@@ -22,7 +22,7 @@ class UserProfilePictureViewController: UIViewController{
     
     // MARK: - Private methods
     @IBAction func onSubmit(_ sender: Any) {
-        UserManager.add(imageUrl: url)
+        selectAndUploadImage()
     }
     
     // MARK: - Actions
@@ -36,31 +36,22 @@ class UserProfilePictureViewController: UIViewController{
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backButtonTapped))
         navigationItem.leftBarButtonItem = backButton
     }
-    
-    private func loadImage(from url: URL) {
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, let image = UIImage(data: data) else {
-                return
-            }
-            DispatchQueue.main.async {
-                self.imageView.image = image
-            }
-        }
-        task.resume()
-    }
-    
-    private func isValidURL(_ urlString: String) -> Bool {
-        let urlRegex = "^(https?://)?([\\w.-]+)?([\\w\\.-]+\\.[a-zA-Z]{2,6})(:[0-9]{1,5})?(/.*)?$"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", urlRegex)
-        return predicate.evaluate(with: urlString)
-    }
 }
 
-// MARK: - UISearchBarDelegate
-extension UserProfilePictureViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if isValidURL(searchText){
-            loadImage(from: URL(string: searchText)!)
+// MARK: - UIImagePickerControllerDelegate
+extension UserProfilePictureViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    private func selectAndUploadImage() {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        self.present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        if let image = info[.originalImage] as? UIImage {
+            UserManager.add(image: image)
+            imageView.image = image
         }
     }
 }

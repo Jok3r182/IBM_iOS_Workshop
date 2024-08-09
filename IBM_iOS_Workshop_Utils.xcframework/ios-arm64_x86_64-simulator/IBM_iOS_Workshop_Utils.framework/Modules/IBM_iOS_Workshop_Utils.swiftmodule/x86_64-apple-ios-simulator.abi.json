@@ -57,7 +57,7 @@
           {
             "kind": "Function",
             "name": "add",
-            "printedName": "add(imageUrl:)",
+            "printedName": "add(image:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -66,14 +66,42 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
               }
             ],
             "declKind": "Func",
-            "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC3add8imageUrlySS_tFZ",
-            "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC3add8imageUrlySS_tFZ",
+            "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC3add5imageySo7UIImageC_tFZ",
+            "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC3add5imageySo7UIImageC_tFZ",
+            "moduleName": "IBM_iOS_Workshop_Utils",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchImage",
+            "printedName": "fetchImage(imageView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImageView",
+                "printedName": "UIKit.UIImageView",
+                "usr": "c:objc(cs)UIImageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22IBM_iOS_Workshop_Utils11UserManagerC10fetchImage9imageViewySo07UIImageJ0C_tFZ",
+            "mangledName": "$s22IBM_iOS_Workshop_Utils11UserManagerC10fetchImage9imageViewySo07UIImageJ0C_tFZ",
             "moduleName": "IBM_iOS_Workshop_Utils",
             "static": true,
             "declAttributes": [
